@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merienda:wght@300..900&display=swap');
+
+body {
+    background-color: #EDFFAB;
+    margin: 10px auto;
+    width: 1000px;
+}
+
+div {
+    border: 2px solid grey;
+    padding: 10px;
+    display: inline-block;
+    width: 330px;
+}
+
+img {
+    width: 100%;
+}
+
+.rightimage {
+    float: right;
+}
+
+img.logo {
+    display: block;
+    transform: translate(-50%);
+    width: 70px;
+    height: auto;
+    margin-left: 50%;
+    margin-top: -65px;
+    margin-bottom: 19px;
+}
+
+h1 {
+    color: #EC7505;
+    margin: 0;
+    font-size: 65px;
+    font-family: 'Great Vibes';
+}
+
+h2 {
+    color: #89608e;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: -80px;
+    font-size: 40px;
+}
+
+h3 {
+    margin: auto;
+    width: 200px;
+    margin-top: -330px;
+    text-align: center;
+    color: #e89005;
+    font-size: 40px;
+}
+
+h4 {
+    text-align: center;
+    width: 100%;
+    margin: 10px auto;
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #734779;
+    font-style: italic;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 16px;
+    text-align: center;
+    color: #89608e;
+}
+
+.about {
+    width: 215px;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.winners {
+    margin: auto;
+    width: 200px;
+    color: #89608e;
+    font-size: 20px;
+}
+
+button {
+    background-color: #2e3192;
+    border-radius: 10px;
+    height: 60px;
+    color: white;
+    font-size: 15px;
+    width: 200px;
+}
+
+.CompButton {
+    float: right;
+}
+
+img {
+    height: 300px;
+}
