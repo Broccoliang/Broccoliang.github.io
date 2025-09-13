@@ -11,6 +11,18 @@ img {
     height: 250px;
 }
 
+div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.images {
+    border: 2px solid grey;
+    padding: 10px;
+    display: inline-block;
+    width: 220px;
+}
+
 .likebutton { /* I've used float instead of vertical align so it doesn't go down when zooming out */
     width: 30px;
     height: auto;
@@ -20,15 +32,15 @@ img {
     cursor: pointer;
 }
 
-input {
+input { /*allows me to control it's data*/
     display: none;
 }
 
-input:checked + img {
+input:checked + img { /*makes it change images once clicked on the like button*/
     content: url('images/LikeButtonClicked.png');
 }
 
-label img:hover {
+label img:hover { /*make the likebutton look slightly transparent when hovering the mouse over it.*/
     opacity: 0.8;
 }
 
@@ -39,6 +51,11 @@ button {
     color: white;
     font-size: 15px;
     width: 200px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
 }
 
 .CompButton {
@@ -75,7 +92,7 @@ p {
     margin-bottom: 0;
     font-size: 16px;
     text-align: center;
-    color: darkgray;
+    color: rgb(59, 59, 59);
     background-color: lightgray;
     border: 1px gray solid;
     border-radius: 4px;
@@ -83,16 +100,9 @@ p {
     display: inline-block;
 }
 
-div {
-    display: flex;
-    justify-content: space-between;
-}
-
-.images {
-    border: 2px solid grey;
-    padding: 10px;
-    display: inline-block;
-    width: 220px;
+[contenteditable="plaintext-only"]:focus { /* lets me style the comment to be styled when edited by the user*/
+    background-color: white;
+    color: black;
 }
 
 span {
