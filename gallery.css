@@ -21,6 +21,9 @@ div {
     padding: 10px;
     display: inline-block;
     width: 220px;
+    background-image: url('images/BackgroundImage.jpg');
+    background-color: rgb(237, 255, 171, 0.7) ;
+    background-blend-mode: lighten;
 }
 
 .likebutton { /* I've used float instead of vertical align so it doesn't go down when zooming out */
