@@ -14,7 +14,7 @@ div {
     display: inline-block;
     width: 330px;
     background-image: url('images/BackgroundImage.jpg');
-    background-color: rgb(237, 255, 171, 0.5); /* Sets the background color to the rgb value */
+    background-color: rgb(237, 255, 171, 0.7); /* Sets the background color to the rgb value */
     background-blend-mode: lighten; /* Allows the background image to look transparent */
 }
 
