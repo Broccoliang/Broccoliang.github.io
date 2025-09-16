@@ -1,3 +1,4 @@
+/* Imports a font to customise the look of texts */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merienda:wght@300..900&display=swap');
 
 body {
@@ -6,47 +7,55 @@ body {
     width: 1000px;    
 }
 
+/* Stretching the width and height to make all artworks look consistent */
 img {
     width: 100%;
     height: 250px;
 }
 
+/* Allowing me to make the images go across the page */
 div {
-    display: flex;
+    /* Automatically seperating the spaced between the artworks evenly */
     justify-content: space-between;
+    display: flex;
 }
 
+/* Allowing to make a border around the elements and make the artworks inline */
 .images {
     border: 2px solid grey;
     padding: 10px;
     display: inline-block;
     width: 220px;
     background-image: url('images/BackgroundImage.jpg');
-    background-color: rgb(237, 255, 171, 0.7) ;
-    background-blend-mode: lighten;
+    background-color: rgb(237, 255, 171, 0.5); /* Sets the background color to the rgb value */
+    background-blend-mode: lighten; /* Allows the background image to look transparent */
 }
 
-.likebutton { /* I've used float instead of vertical align so it doesn't go down when zooming out */
+/* Customises the likebutton to fit beside the comment button */
+.likebutton { 
     width: 30px;
     height: auto;
     display: block;
     margin-top: 5px;
-    float: right;
+    float: right; /* I've used float instead of vertical align so it doesn't go down when zooming out */
     cursor: pointer;
 }
 
-input { /*allows me to control it's data*/
+input { /* hides the checkbox */
     display: none;
 }
 
-input:checked + img { /*makes it change images once clicked on the like button*/
+/* makes it change images once clicked on the like button */
+input:checked + img {
     content: url('images/LikeButtonClicked.png');
 }
 
-label img:hover { /*make the likebutton look slightly transparent when hovering the mouse over it.*/
+/*make the likebutton look slightly transparent when hovering the mouse over it.*/
+label img:hover {
     opacity: 0.8;
 }
 
+/* Makes a purple button to navigate pages */
 button {
     background-color: #2e3192;
     border-radius: 10px;
@@ -57,14 +66,17 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: blue;
-}
-
+/* Moves the Other Participants button to the right of the page */
 .CompButton {
     float: right;
 }
 
+/* When hovering over the button, the button turns blue */
+button:hover {
+    background-color: blue;
+}
+
+/* Makes the title centered at the top */
 h1 {
     color: #EC7505;
     font-size: 65px;
@@ -90,6 +102,7 @@ h4 {
     font-style: italic;
 }
 
+/* Makes the look of a comment button */
 p {
     margin-top: 10px;
     margin-bottom: 0;
@@ -103,11 +116,13 @@ p {
     display: inline-block;
 }
 
+/* Allows to style the look of the comment button when typing in it */
 [contenteditable="plaintext-only"]:focus { /* lets me style the comment to be styled when edited by the user*/
     background-color: white;
     color: black;
 }
 
+/* Makes the name of the artists have no bold */
 span {
     font-weight: normal;
 }

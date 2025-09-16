@@ -1,3 +1,4 @@
+/* Imports a font to customise the look of texts */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merienda:wght@300..900&display=swap');
 
 body {
@@ -6,27 +7,30 @@ body {
     width: 1000px;
 }
 
+/* makes a border around the artwork and the writings */
 div {
     border: 2px solid grey;
     padding: 10px;
     display: inline-block;
     width: 330px;
     background-image: url('images/BackgroundImage.jpg');
-    background-color: rgb(237, 255, 171, 0.7) ;
-    background-blend-mode: lighten;
+    background-color: rgb(237, 255, 171, 0.5); /* Sets the background color to the rgb value */
+    background-blend-mode: lighten; /* Allows the background image to look transparent */
 }
 
 img {
     width: 100%;
 }
 
+/* Makes the right image go to the right of the page */
 .rightimage {
     float: right;
 }
 
+
 img.logo {
     display: block;
-    transform: translate(-50%);
+    transform: translate(-50%); /*moves the origin to the center of the element*/
     width: 70px;
     height: auto;
     margin-left: 50%;
@@ -41,6 +45,7 @@ h1 {
     font-family: 'Great Vibes';
 }
 
+/* Moves the about us down at the center of the page */
 h2 {
     color: #89608e;
     display: inline-block;
@@ -51,6 +56,7 @@ h2 {
     font-size: 40px;
 }
 
+/* Puts the 'Winners' in between the two images */
 h3 {
     margin: auto;
     width: 200px;
@@ -78,6 +84,7 @@ p {
     color: #89608e;
 }
 
+/* Adjusts the paragraph to be larger and not small */
 .about {
     width: 215px;
     margin: auto;
@@ -86,6 +93,7 @@ p {
     font-weight: normal;
 }
 
+/* Puts the paragraph in between the two images */
 .winners {
     margin: auto;
     width: 200px;
@@ -93,6 +101,7 @@ p {
     font-size: 20px;
 }
 
+/* Makes a purple button at the top for the user to navigate with */
 button {
     background-color: #2e3192;
     border-radius: 10px;
@@ -103,10 +112,12 @@ button {
     cursor: pointer;
 }
 
+/* Makes the button turn blue when hovering the mouse over it */
 button:hover {
     background-color: blue;
 }
 
+/* Puts the right button on the right side of the page */
 .CompButton {
     float: right;
 }
